@@ -86,12 +86,12 @@ Agent Based Modelling
 <p>
  Testing was completed using a number of methods: <br>
  1) In lines 131-133 the following statements check that the created agents have the correct starting parameters. These have been commented out in the final version # assert particles[i].z == building_height, "Elevation should equal building height" <br>
-   # assert particles[i].x == 50, "x should equal 50" # assert particles[i].y == 150, "y should equal 150"
-2) Line 161 contains the following commented out statement to test that the fall function is working, and the particles are no longer moving once z=0 # assert particles[i].z == 0, "Elevation should = 0" <br>
-3) 'Coordinates.txt' contains the final locations of each bacteria. This can be used to compare against starting location and check the z values are all zero <br>
-4) Validation of input into entry on GUI. To prevent fatal errors when running the code stemming from wrong or missing input, the entry is validated at the start of the function. <br>
+   # assert particles[i].x == 50, "x should equal 50" # assert particles[i].y == 150, "y should equal 150" <br>
+ 2) Line 161 contains the following commented out statement to test that the fall function is working, and the particles are no longer moving once z=0 # assert particles[i].z == 0, "Elevation should = 0" <br>
+ 3) 'Coordinates.txt' contains the final locations of each bacteria. This can be used to compare against starting location and check the z values are all zero <br>
+ 4) Validation of input into entry on GUI. To prevent fatal errors when running the code stemming from wrong or missing input, the entry is validated at the start of the function. <br>
  The function: try: int(entry1.get()) ..... Accept ValueError: Prevents the programme crashing if a non integer or no value is entered and instead returns a message to the GUI informing the user to input a value. <br>
-5) Similary the following statement: if int(entry1.get()) in range (1, 101, 1): ..... else: print(...) Does not allow the run command to continue and returns a message to the GUI informing the user to input a value in the correct range. <br>
+ 5) Similary the following statement: if int(entry1.get()) in range (1, 101, 1): ..... else: print(...) Does not allow the run command to continue and returns a message to the GUI informing the user to input a value in the correct range. <br>
 At the end of the programme the runtime is calculated and displayed on screen. This was use when attempting to make the programme more effecient
  </p>
  
